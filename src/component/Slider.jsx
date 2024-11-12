@@ -13,7 +13,7 @@ function NextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="bg-white text-black rounded-full p-2"
+      className="bg-white text-black  rounded p-2"
       onClick={onClick}
       style={{
         display: "flex",
@@ -39,7 +39,7 @@ function PrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="bg-white text-black rounded-full p-2"
+      className="bg-white text-black rounded p-2"
       onClick={onClick}
       style={{
         display: "flex",
