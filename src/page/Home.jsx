@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from '../component/slider';
+import Slider from '../component/Slider';
 import FrameOne from '../component/FrameOne';
 import ServicesSection from '../component/ServicesSection '
 import HomePage from '../component/HomePage';
