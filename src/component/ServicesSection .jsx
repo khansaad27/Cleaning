@@ -69,30 +69,30 @@ const ServicesPage = () => {
                         {services.map((service, idx) => (
                             <div
                                 key={idx}
-                                className="service-card w-[312px] group py-12 px-8 bg-white relative overflow-hidden hover:shadow-lg transition-all duration-500 hover:bg-[#2B8761] hover:bg-opacity-95 rounded-lg"
+                                className="service-card w-[312px] group py-12 px-8 bg-white relative overflow-hidden hover:shadow-[rgba(50,_50,_93,_0.25)_0px_50px_100px_-20px,_rgba(0,_0,_0,_0.3)_0px_30px_60px_-30px] transition-all duration-500   rounded-lg"
                             >
                                 {/* Image */}
-                                <div className="service-image w-[72px] h-[72px] mb-6 relative bg-white">
-                                    <Image src={service.image} alt={service.title} className="transition-all duration-500" />
+                                <div className="service-image w-[72px] h-[72px] mb-6 relative z-20 ">
+                                    <Image src={service.image} alt={service.title} imgClassName=' group-hover:bg-white ' className="  transition-all duration-500 z-20 relative " />
                                 </div>
 
                                 {/* Title */}
-                                <h2 className="service-title text-[#0c261a] font-Roboto text-[20px] font-medium leading-[30px] text-left group-hover:text-[#fff] transition-all duration-500">
+                                <h2 className="service-title text-[#0c261a] font-Roboto text-[20px] font-medium leading-[30px] group-hover:text-white  transition-all duration-500 z-20 relative">
                                     {service.title}
                                 </h2>
 
                                 {/* Description */}
-                                <p className="service-description text-[#515854] font-Roboto text-[14px] font-normal leading-[22px] text-left mt-2 mb-6 group-hover:text-[#f0f0f0] transition-all duration-500">
+                                <p className="service-description text-[#515854]  font-Roboto text-[14px] font-normal leading-[22px] mt-2 mb-6 group-hover:text-white transition-all duration-500 z-20 relative">
                                     {service.description}
                                 </p>
 
                                 {/* Button */}
-                                <button className="book-button py-[14px] px-6 text-[#fff] border border-[#fff] bg-[#2B8761] group-hover:bg-[#ffffff] group-hover:text-[#2B8761] transition-all duration-500 rounded-[5px] block mt-4">
+                                <button className="book-button py-[14px] px-6 text-[#2B8761] border border-[#2B8761] group-hover:bg-white transition-all duration-500 rounded-[5px] z-20 relative">
                                     Book Now
                                 </button>
 
                                 {/* Circle Effect */}
-                                <div className="circle-effect w-[191px] h-[191px] absolute -right-[60px] -top-[60px] transition-all duration-500 group-hover:bg-[#F2FFFA] bg-opacity-100 group-hover:bg-opacity-5 rounded-full">
+                                <div className="circle-effect w-[191px] h-[191px] group-hover:w-[435px] group-hover:h-[650px] absolute -right-[60px] group-hover:-right-[65px] -top-[60px] group-hover:-top-[68px] transition-all duration-500  group-hover:bg-[#65a593] group-hover:opacity-95  group-hover:rounded-full">
                                     <Image src="/cer.png" alt={service.title} />
                                 </div>
                             </div>
@@ -105,8 +105,6 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
-
-
 
 
 
